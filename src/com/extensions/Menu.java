@@ -1,5 +1,7 @@
 package com.extensions;
 
+import com.enumeration.*;
+
 public class Menu {
 
     private final ExtensionsMessage msg = new ExtensionsMessage();
@@ -13,6 +15,7 @@ public class Menu {
 
         switch (seleccion) {
             case "1": {
+                firstPoint();
                 break;
             }
             default: {
@@ -33,5 +36,10 @@ public class Menu {
         }
         text.workshopQuestions();
         return msg.entrada.nextLine();
+    }
+
+    private void firstPoint() {
+        PrimerPunto workshop = new PrimerPunto();
+        workshop.start();
     }
 }
