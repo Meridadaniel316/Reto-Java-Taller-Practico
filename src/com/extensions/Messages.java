@@ -6,7 +6,7 @@ public class Messages extends ExtensionsMessage {
         System.out.println("Error: " + e);
     }
 
-    //MENU
+    // MENU
     public void welcomeWorkshop() {
         pictureCar();
         lineBreak();
@@ -18,7 +18,7 @@ public class Messages extends ExtensionsMessage {
         System.out.printf("Este taller cuenta con un total de 18 ejercicios%nDigita del 1 al 18 dependiendo del ejercicio que quieras ver%n");
     }
 
-    //SEGUNDO PUNTO
+    // PRIMER Y SEGUNDO PUNTO
 
     public void extractDataResponse(int[] data) {
         if (data[0] < data[1]) {
@@ -40,7 +40,7 @@ public class Messages extends ExtensionsMessage {
         System.out.printf("Variable 1: (%d) %nVariable 2: (%d) %n", data[0], data[1]);
     }
 
-    //TERCER PUNTO
+    // TERCER PUNTO
 
     public void extractCircleArea() {
         System.out.print("Introduce el radio de un Círculo: ");
@@ -49,12 +49,20 @@ public class Messages extends ExtensionsMessage {
         System.out.println("El área del Círculo resultante es: " + area);
     }
 
-    //CUARTO PUNTO
+    // CUARTO PUNTO
     public void extractProductValue() {
         System.out.println("Ingrese un valor para el producto: ");
     }
 
     public void totalProduct(double total) {
         System.out.printf("El producto tiene un valor aproximado de $%.1f este valor ya cuenta con el porcentaje(21) del IVA. %n", total);
+    }
+
+    // QUINTO PUNTO
+    public void evenAndOddMenuQuestion(){
+        System.out.println("¿Quieres ver los números pares o impares?\n1.Pares\n2.Impares\n3.Ambos");
+    }
+    public void evenAndOdd(int i, int j) {
+        System.out.printf("Par: %d - Impar: %d %n", i, j);
     }
 }

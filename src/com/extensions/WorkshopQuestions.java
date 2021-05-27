@@ -42,6 +42,15 @@ public class WorkshopQuestions extends ExtensionsMessage{
         lineBreak();
         pressAnyKeyToContinue();
     }
+    public void fifthPoint(){
+        clearConsole();
+        System.out.println("                EJERCICIO #5");
+        System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
+        lineBreak();
+        System.out.println("Muestra los números impares y pares del 1 al 100 (ambos incluidos).\nUsa un bucle while.");
+        lineBreak();
+        pressAnyKeyToContinue();
+    }
 
     public void finalQuestion() {
         pressAnyKeyToContinue();
