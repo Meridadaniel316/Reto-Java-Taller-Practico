@@ -22,6 +22,9 @@ public class Menu {
             case "3":
                 thirdPoint();
                 break;
+            case "4":
+                fourthPoint();
+                break;
             default: {
                 this.Repeat = true;
                 programStart();
@@ -52,6 +55,10 @@ public class Menu {
     }
     private void thirdPoint() {
         ThirdPoint workshop = new ThirdPoint();
+        workshop.start();
+    }
+    private void fourthPoint() {
+        FourthPoint workshop = new FourthPoint();
         workshop.start();
     }
 }

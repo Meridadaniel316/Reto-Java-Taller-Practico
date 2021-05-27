@@ -33,6 +33,15 @@ public class WorkshopQuestions extends ExtensionsMessage{
         lineBreak();
         pressAnyKeyToContinue();
     }
+    public void fourthPoint(){
+        clearConsole();
+        System.out.println("                EJERCICIO #4");
+        System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
+        lineBreak();
+        System.out.println("Lee un número por teclado que pida el precio de un producto (puede tener decimales) y calcule el precio final con IVA.\nEl IVA sera una constante que sera del 21%.");
+        lineBreak();
+        pressAnyKeyToContinue();
+    }
 
     public void finalQuestion() {
         pressAnyKeyToContinue();

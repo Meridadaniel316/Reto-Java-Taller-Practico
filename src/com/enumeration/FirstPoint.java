@@ -4,6 +4,7 @@ import com.extensions.*;
 
 public class FirstPoint {
 
+    private final Messages text = new Messages();
     private final ExtensionsMessage msg = new ExtensionsMessage();
     private final WorkshopQuestions presentation = new WorkshopQuestions();
 
@@ -18,10 +19,10 @@ public class FirstPoint {
         try {
 
             presentation.firstPoint();
-            extractResponse(data);
+            text.extractDataResponse(data);
 
         } catch (Exception e) {
-            System.out.println("Error: " + e);
+            text.errorMessage(e);
         }
 
         presentation.finalQuestion();
@@ -31,24 +32,8 @@ public class FirstPoint {
     private void extractResponse(int[] data) {
         msg.clearConsole();
         System.out.println("EJERCICIO #1");
-        if (data[0] < data[1]) {
-            msg.lineBreak();
-            readData(data, "La variable #2 es la de mayor valor: ", 1, "La variable #1 es la de menor valor: ", 0);
-        } else if (data[0] == data[1]) {
-            msg.lineBreak();
-            System.out.printf("Las dos variables tienen el mismo valor %nVariable 1: (%d) %nVariable 2: (%d) %n", data[0], data[1]);
-        } else {
-            msg.lineBreak();
-            readData(data, "La variable #1 es la de mayor valor: ", 0, "La variable #2 es la de menor valor: ", 1);
-        }
+        text.extractDataResponse(data);
         msg.lineBreak();
-    }
-
-    private void readData(int[] data, String s, int i, String s2, int i2) {
-        System.out.println(s + data[i]);
-        System.out.println(s2 + data[i2]);
-        msg.lineBreak();
-        System.out.printf("Variable 1: (%d) %nVariable 2: (%d) %n", data[0], data[1]);
     }
 
 

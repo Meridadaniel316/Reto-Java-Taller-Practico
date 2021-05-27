@@ -2,13 +2,59 @@ package com.extensions;
 
 public class Messages extends ExtensionsMessage {
 
-    public void welcomeWorkshop(){
+    public void errorMessage(Exception e) {
+        System.out.println("Error: " + e);
+    }
+
+    //MENU
+    public void welcomeWorkshop() {
         pictureCar();
         lineBreak();
         System.out.printf("¡Hola, bienvenido a mi sistema!%n");
         lineBreak();
     }
-    public void workshopQuestions(){
+
+    public void workshopQuestions() {
         System.out.printf("Este taller cuenta con un total de 18 ejercicios%nDigita del 1 al 18 dependiendo del ejercicio que quieras ver%n");
+    }
+
+    //SEGUNDO PUNTO
+
+    public void extractDataResponse(int[] data) {
+        if (data[0] < data[1]) {
+            lineBreak();
+            readData(data, "La variable #2 es la de mayor valor: ", 1, "La variable #1 es la de menor valor: ", 0);
+        } else if (data[0] == data[1]) {
+            lineBreak();
+            System.out.printf("Las dos variables tienen el mismo valor %nVariable 1: (%d) %nVariable 2: (%d) %n", data[0], data[1]);
+        } else {
+            lineBreak();
+            readData(data, "La variable #1 es la de mayor valor: ", 0, "La variable #2 es la de menor valor: ", 1);
+        }
+    }
+
+    public void readData(int[] data, String s, int i, String s2, int i2) {
+        System.out.println(s + data[i]);
+        System.out.println(s2 + data[i2]);
+        lineBreak();
+        System.out.printf("Variable 1: (%d) %nVariable 2: (%d) %n", data[0], data[1]);
+    }
+
+    //TERCER PUNTO
+
+    public void extractCircleArea() {
+        System.out.print("Introduce el radio de un Círculo: ");
+    }
+    public void AreaResult(double area) {
+        System.out.println("El área del Círculo resultante es: " + area);
+    }
+
+    //CUARTO PUNTO
+    public void extractProductValue() {
+        System.out.println("Ingrese un valor para el producto: ");
+    }
+
+    public void totalProduct(double total) {
+        System.out.printf("El producto tiene un valor aproximado de $%.1f este valor ya cuenta con el porcentaje(21) del IVA. %n", total);
     }
 }

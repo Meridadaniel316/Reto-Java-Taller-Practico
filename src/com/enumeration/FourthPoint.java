@@ -6,7 +6,7 @@ import com.extensions.WorkshopQuestions;
 
 import java.util.Scanner;
 
-public class ThirdPoint {
+public class FourthPoint {
 
     private final Messages text = new Messages();
     private final Scanner entrada = new Scanner(System.in);
@@ -14,35 +14,29 @@ public class ThirdPoint {
     private final WorkshopQuestions presentation = new WorkshopQuestions();
 
     public void start() {
-        presentation.thirdPoint();
-
-        double radioDouble;
+        int percentage = 21;
+        presentation.fourthPoint();
         try {
 
-            radioDouble = getRadio();
-            extractAreaResult(radioDouble);
+            double quantity = getProductQuantity();
+            extractProductResult(percentage, quantity);
 
         } catch (Exception e) {
             text.errorMessage(e);
         }
-
         presentation.finalQuestion();
     }
 
-    private void extractAreaResult(double radioDouble) {
-        double area;
-        area = Math.PI * (radioDouble * radioDouble);
-
+    private void extractProductResult(int percentage, double quantity) {
+        double total = quantity + (quantity * percentage / 100);
+        msg.clearConsole();
         msg.lineBreak();
-        text.AreaResult(area);
+        text.totalProduct(total);
         msg.lineBreak();
     }
 
-    private double getRadio() {
-        String radio;
-        msg.clearConsole();
-        text.extractCircleArea();
-        radio = entrada.nextLine();
-        return Double.parseDouble(radio);
+    private double getProductQuantity() {
+        text.extractProductValue();
+        return entrada.nextDouble();
     }
 }
