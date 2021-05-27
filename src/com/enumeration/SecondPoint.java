@@ -22,7 +22,7 @@ public class SecondPoint {
         } catch (Exception e) {
             System.out.println("Error: " + e);
         }
-        presentation.preguntaFinal();
+        presentation.finalQuestion();
 
     }
 

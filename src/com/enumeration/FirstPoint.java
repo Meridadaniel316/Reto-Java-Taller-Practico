@@ -24,7 +24,7 @@ public class FirstPoint {
             System.out.println("Error: " + e);
         }
 
-        presentation.preguntaFinal();
+        presentation.finalQuestion();
 
     }
 

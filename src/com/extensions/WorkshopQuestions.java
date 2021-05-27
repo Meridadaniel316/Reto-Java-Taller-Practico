@@ -24,8 +24,17 @@ public class WorkshopQuestions extends ExtensionsMessage{
         lineBreak();
         pressAnyKeyToContinue();
     }
+    public void thirdPoint() {
+        clearConsole();
+        System.out.println("                 EJERCICIO #3");
+        System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
+        lineBreak();
+        System.out.println("Haz una aplicación que calcule el área de un círculo(pi*R2).El radio se pedirá por teclado (recuerda pasar de String a double con Double.parseDouble).\nUsa la constante PI y el método pow de Math.");
+        lineBreak();
+        pressAnyKeyToContinue();
+    }
 
-    public void preguntaFinal() {
+    public void finalQuestion() {
         pressAnyKeyToContinue();
         System.out.printf("¿Desea volver a probar este programa? %n 1.Menu inicial %n 2.Salir %n");
         int probarTallerDenuevo = entrada.nextInt();
