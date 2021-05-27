@@ -6,45 +6,37 @@ public class ExtensionsMessage {
 
     Scanner entrada = new Scanner(System.in);
 
-    public void pressAnyKeyToContinue()
-    {
+    public void pressAnyKeyToContinue() {
         System.out.println("<<<Presione ENTER para continuar>>>");
-        try
-        {
+        try {
             entrada.nextLine();
+        } catch (Exception ignored) {
         }
-        catch(Exception ignored) {}
         clearConsole();
     }
 
-    public void clearConsole()
-    {
-        for (int i=0; i < 30; i++)
-
-        {
+    public void clearConsole() {
+        for (int i = 0; i < 30; i++) {
             System.out.println();
         }
     }
-    public void lineaSalto() {
+
+
+    public void lineBreak() {
         System.out.println("———————————————————————————————————————————————————————————————");
     }
 
-    public void errorSystemCmd()
-    {
+    public void errorSystemCmd() {
         clearConsole();
-        System.out.printf("%n " +
-                "███████╗██████╗░██████╗░░█████╗░██████╗░ %n " +
-                "██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗ %n " +
-                "█████╗░░██████╔╝██████╔╝██║░░██║██████╔╝ %n " +
-                "██╔══╝░░██╔══██╗██╔══██╗██║░░██║██╔══██╗ %n " +
-                "███████╗██║░░██║██║░░██║╚█████╔╝██║░░██║ %n " +
-                "╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝ %n");
-        lineaSalto();
-        System.out.printf("Has seleccionado una respuesta incorrecta.%nIntenta nuevamente =) %n");
-        lineaSalto();
+        System.out.print("\n" +
+                "░░░░░░░▄█▄▄▄█▄░░░░░░░\n" +
+                "▄▀░░░░▄▌─▄─▄─▐▄░░░░▀▄\n" +
+                "█▄▄█░░▀▌─▀─▀─▐▀░░█▄▄█   E R R O R   I N   T H E   S Y S T E M\n" +
+                "░▐▌░░░░▀▀███▀▀░░░░▐▌\n" +
+                "████░▄█████████▄░████\n");
     }
 
-    public void pictureCar(){
+    public void pictureCar() {
         System.out.print("\n" +
                 "            ──────────▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▌──────\n" +
                 "          ─────────▄▄██▌█░░░░░░░░░░░░▐─────\n" +
@@ -53,7 +45,7 @@ public class ExtensionsMessage {
                 "          ──────▀❍▀▀▀▀▀▀▀❍❍▀▀▀▀▀▀❍❍▀──────\n");
     }
 
-    public void pictureResult(){
+    public void pictureResult() {
         System.out.print("\n" +
                 "┏━━━┳━━━┳━━━┳┓╋┏┳┓╋┏━━━━┳━━━┳━━━┳━━━┓\n" +
                 "┃┏━┓┃┏━━┫┏━┓┃┃╋┃┃┃╋┃┏┓┏┓┃┏━┓┣┓┏┓┃┏━┓┃\n" +
