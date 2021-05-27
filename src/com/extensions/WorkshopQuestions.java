@@ -4,12 +4,23 @@ public class WorkshopQuestions extends ExtensionsMessage{
 
     private final Menu menu = new Menu();
 
-    public void primerTaller() {
+    public void firstPoint() {
         clearConsole();
         System.out.println("                EJERCICIO #1");
         System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
         lineBreak();
         System.out.println("Declara 2 variables numéricas (con el valor que desees), he indica cual es mayor de los dos.\nSi son iguales indicarlo también. Ve cambiando los valores para comprobar que funciona.");
+        lineBreak();
+        pressAnyKeyToContinue();
+    }
+    public void secondPoint() {
+        clearConsole();
+        System.out.println("                EJERCICIO #2");
+        System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
+        lineBreak();
+        System.out.println("Declara 2 variables numéricas (con el valor que desees), he indica cual es mayor de los dos.\nSi son iguales indicarlo también. Ve cambiando los valores para comprobar que funciona.");
+        lineBreak();
+        System.out.println("Al ejercicio anterior agregar entrada por consola de dos valores e indicar si son mayores, menores o iguales.");
         lineBreak();
         pressAnyKeyToContinue();
     }

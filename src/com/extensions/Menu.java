@@ -14,10 +14,12 @@ public class Menu {
         String seleccion = presentationOfWorkshop(this.Repeat);
 
         switch (seleccion) {
-            case "1": {
+            case "1":
                 firstPoint();
                 break;
-            }
+            case "2":
+                secondPoint();
+                break;
             default: {
                 this.Repeat = true;
                 programStart();
@@ -39,7 +41,12 @@ public class Menu {
     }
 
     private void firstPoint() {
-        PrimerPunto workshop = new PrimerPunto();
+        FirstPoint workshop = new FirstPoint();
+        workshop.start();
+    }
+
+    private void secondPoint() {
+        SecondPoint workshop = new SecondPoint();
         workshop.start();
     }
 }
