@@ -99,4 +99,14 @@ public class Messages extends ExtensionsMessage {
     public void invalidDay(){
         System.out.println("Seleccionaste un dia invalido");
     }
+
+    //NOVENO PUNTO
+
+    public String printTextSmile(){
+        return "La sonrisa sera la mejor arma contra la tristeza";
+    }
+
+    public void printSmileQuestion(){
+        System.out.println("Si desea concatenar una frase escríbala, de lo contrario apriete <<ENTER>>");
+    }
 }

@@ -83,7 +83,7 @@ public class WorkshopQuestions extends ExtensionsMessage{
         System.out.println("                EJERCICIO #9");
         System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
         lineBreak();
-        System.out.println("Del texto, “La sonrisa sera la mejor arma contra la tristeza” Reemplaza todas las a del String anterior por una e, adicionalmente concatenar a esta frase una adicional que ustedes quieran incluir por consola y las muestre luego unidas.");
+        System.out.println("Del texto, “La sonrisa sera la mejor arma contra la tristeza” Reemplaza todas las a del String anterior por una e,\nadicionalmente concatenar a esta frase una adicional que ustedes quieran incluir por consola y las muestre luego unidas.");
         lineBreak();
         pressAnyKeyToContinue();
     }
