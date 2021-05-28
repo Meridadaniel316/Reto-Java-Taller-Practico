@@ -52,6 +52,9 @@ public class Menu {
             case "13":
                 thirteenthPoint();
                 break;
+            case "14":
+                fourteenthPoint();
+                break;
             default: {
                 this.Repeat = true;
                 programStart();
@@ -124,10 +127,10 @@ public class Menu {
         ThirteenthPoint workshop = new ThirteenthPoint();
         workshop.start();
     }
-    /*private void fourteenthPoint(){
+    private void fourteenthPoint(){
         FourteenthPoint workshop = new FourteenthPoint();
         workshop.start();
-    }*/
+    }
     /*private void fifteenthPoint(){
         FifteenthPoint workshop = new FifteenthPoint();
         workshop.start();
