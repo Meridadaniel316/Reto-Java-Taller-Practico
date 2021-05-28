@@ -7,7 +7,7 @@ import com.extensions.WorkshopQuestions;
 
 import java.util.Scanner;
 
-public class FifthPoint {
+public class SixthPoint {
 
     private final Errors error = new Errors();
     private final Messages text = new Messages();
@@ -16,10 +16,9 @@ public class FifthPoint {
     private final WorkshopQuestions presentation = new WorkshopQuestions();
 
     public void start() {
-        presentation.fifthPoint();
+        presentation.sixthPoint();
         menuSeleccion();
-        menuSeleccion();
-        //presentation.finalQuestion();
+        presentation.finalQuestion();
     }
 
     private void menuSeleccion() {
@@ -46,44 +45,25 @@ public class FifthPoint {
 
     private void oddNumbers() {
         msg.clearConsole();
-        int i = 0;
-        while (i <= 100)
-        {
-            i = getData(i, 3);
+        for (int i = 0; i <= 100; i += 3) {
             System.out.println(+i);
         }
     }
 
     private void pairNumbers() {
         msg.clearConsole();
-        int i = 0;
-        while (i <= 100)
-        {
-            i = getData(i, 2);
+        for (int i = 0; i <= 100; i += 2) {
             System.out.println(+i);
         }
     }
 
     private void bothNumbers() {
         msg.clearConsole();
-        int i = 0;
-        int j = 0;
-        while (j < 100)
-        {
-            while (i < 100)
-            {
-                i = getData(i, 2);
-                j = getData(j, 3);
-                text.evenAndOdd(i, j);
-            }
+        for (int i = 0; i <= 100; i += 3) {
+            System.out.println("Números impares: "+i);
         }
-
-    }
-
-    private int getData(int i, int i2) {
-        if (i <= 100) {
-            i += i2;
+        for (int i = 0; i <= 100; i += 2) {
+            System.out.println("Números pares: "+i);
         }
-        return i;
     }
 }

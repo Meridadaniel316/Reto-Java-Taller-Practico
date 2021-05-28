@@ -28,6 +28,9 @@ public class Menu {
             case "5":
                 fifthPoint();
                 break;
+            case "6":
+                sixthPoint();
+                break;
             default: {
                 this.Repeat = true;
                 programStart();
@@ -66,6 +69,10 @@ public class Menu {
     }
     private void fifthPoint(){
         FifthPoint workshop = new FifthPoint();
+        workshop.start();
+    }
+    private void sixthPoint(){
+        SixthPoint workshop = new SixthPoint();
         workshop.start();
     }
 }
