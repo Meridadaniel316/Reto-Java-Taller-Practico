@@ -109,4 +109,9 @@ public class Messages extends ExtensionsMessage {
     public void printSmileQuestion(){
         System.out.println("Si desea concatenar una frase escríbala, de lo contrario apriete <<ENTER>>");
     }
+
+    //DECIMO PUNTO
+    public void printTextSpaces(){
+        System.out.println("Por favor ingrese la frase a la cual le desea eliminar los espacios.");
+    }
 }
