@@ -34,6 +34,9 @@ public class Menu {
             case "7":
                 seventhPoint();
                 break;
+            case "8":
+                eighthPoint();
+                break;
             default: {
                 this.Repeat = true;
                 programStart();
@@ -82,4 +85,50 @@ public class Menu {
         SeventhPoint workshop = new SeventhPoint();
         workshop.start();
     }
+    private void eighthPoint(){
+        EighthPoint workshop = new EighthPoint();
+        workshop.start();
+    }
+    /*private void ninthPoint(){
+        NinthPoint workshop = new NinthPoint();
+        workshop.start();
+    }*/
+    /*private void tenthPoint(){
+        TenthPoint workshop = new TenthPoint();
+        workshop.start();
+    */
+    /*private void eleventhPoint(){
+        EleventhPoint workshop = new EleventhPoint();
+        workshop.start();
+    }*/
+    /*private void twelfthPoint(){
+        TwelfthPoint workshop = new TwelfthPoint();
+        workshop.start();
+    }*/
+    /*private void thirteenthPoint(){
+        ThirteenthPoint workshop = new ThirteenthPoint();
+        workshop.start();
+    }*/
+    /*private void fourteenthPoint(){
+        FourteenthPoint workshop = new FourteenthPoint();
+        workshop.start();
+    }*/
+    /*private void fifteenthPoint(){
+        FifteenthPoint workshop = new FifteenthPoint();
+        workshop.start();
+    }*/
+    /*private void sixteenthPoint(){
+        SixteenthPoint workshop = new SixteenthPoint();
+        workshop.start();
+    }*/
+    /*private void seventeenthPoint(){
+        SeventeenthPoint workshop = new SeventeenthPoint();
+        workshop.start();
+    }*/
+    /*private void eighteenth(){
+        EighteenthPoint workshop = new EighteenthPoint();
+        workshop.start();
+    }*/
+
+
 }

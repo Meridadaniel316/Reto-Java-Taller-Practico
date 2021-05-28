@@ -69,6 +69,120 @@ public class WorkshopQuestions extends ExtensionsMessage{
         lineBreak();
         pressAnyKeyToContinue();
     }
+    public void eighthPoint(){
+        clearConsole();
+        System.out.println("                EJERCICIO #8");
+        System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
+        lineBreak();
+        System.out.println("Crea una aplicación por consola que nos pida un día de la semana y que nos diga si es un día laboral o no.\n Usa un switch para ello.");
+        lineBreak();
+        pressAnyKeyToContinue();
+    }
+    public void ninthPoint(){
+        clearConsole();
+        System.out.println("                EJERCICIO #9");
+        System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
+        lineBreak();
+        System.out.println("Del texto, “La sonrisa sera la mejor arma contra la tristeza” Reemplaza todas las a del String anterior por una e, adicionalmente concatenar a esta frase una adicional que ustedes quieran incluir por consola y las muestre luego unidas.");
+        lineBreak();
+        pressAnyKeyToContinue();
+    }
+    public void tenthPoint(){
+        clearConsole();
+        System.out.println("                EJERCICIO #10");
+        System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
+        lineBreak();
+        System.out.println("Realizar una aplicación de consola, que al ingresar una frase por teclado elimine los espacios que esta contenga.");
+        lineBreak();
+        pressAnyKeyToContinue();
+    }
+    public void eleventhPoint(){
+        clearConsole();
+        System.out.println("                EJERCICIO #11");
+        System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
+        lineBreak();
+        System.out.println("Realizar la construcción de un algoritmo que permita de acuerdo a una frase pasada por consola, indicar cual es la longitud de esta frase, adicionalmente cuantas vocales tiene de “a,e,i,o,u”.");
+        lineBreak();
+        pressAnyKeyToContinue();
+    }
+    public void twelfthPoint(){
+        clearConsole();
+        System.out.println("                EJERCICIO #12");
+        System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
+        lineBreak();
+        System.out.println("Pedir dos palabras por teclado, indicar si son iguales, sino son iguales mostrar sus diferencias.");
+        lineBreak();
+        pressAnyKeyToContinue();
+    }
+    public void thirteenthPoint(){
+        clearConsole();
+        System.out.println("                EJERCICIO #13");
+        System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
+        lineBreak();
+        System.out.println("Realizar un algoritmo que permita consulta la fecha y hora actual en el formato (AAAA/MM/DD) (HH:MM:SS)");
+        lineBreak();
+        pressAnyKeyToContinue();
+    }
+    public void fourteenthPoint(){
+        clearConsole();
+        System.out.println("                EJERCICIO #14");
+        System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
+        lineBreak();
+        System.out.println("Crear un programa que pida un numero por teclado y que imprima por pantalla los números desde el numero introducido hasta 1000 con saldos de 2 en 2.");
+        lineBreak();
+        pressAnyKeyToContinue();
+    }
+    public void fifteenthPoint(){
+        clearConsole();
+        System.out.println("                EJERCICIO #15");
+        System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
+        lineBreak();
+        System.out.println("Hacer un programa que muestre el siguiente menú de opciones\n" +
+                "****** GESTION CINEMATOGRÁFICA ********\n" +
+                "1-NUEVO ACTOR\n" +
+                "2-BUSCAR ACTOR\n" +
+                "3-ELIMINAR ACTOR\n" +
+                "4-MODIFICAR ACTOR\n" +
+                "5-VER TODOS LOS ACTORES\n" +
+                "6- VER PELICULAS DE LOS ACTORES\n" +
+                "\n" +
+                "7-VER CATEGORIA DE LAS PELICULAS DE LOS ACTORES\n" +
+                "8-SALIR\n" +
+                "EL SISTEMA SOLO VA A SALIR CUANDO SE DIGITE EL NUMERO 8, MIENTRAS SE DIGITE UNA DE LAS CINCO OPCIONES DEBE SEGUIR MOSTRADO EL MENU Y SI EL USUARIO DIGITA UN NUMERO QUE NO ESTA EN EL MENU SE DEBE ARROJAR UN MENSAJE \" OPCION INCORRECTO\". Y MOSTRAR EL MENU NUEVAMENTE.\n" +
+                "PISTA: CONVINAR SWICHT Y ALGUNO DE LOS BUCLES.\n");
+        lineBreak();
+        pressAnyKeyToContinue();
+    }
+    public void sixteenthPoint(){
+        clearConsole();
+        System.out.println("                EJERCICIO #16");
+        System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
+        lineBreak();
+        System.out.println("");
+        lineBreak();
+        pressAnyKeyToContinue();
+    }
+    public void seventeenthPoint(){
+        clearConsole();
+        System.out.println("                EJERCICIO #17");
+        System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
+        lineBreak();
+        System.out.println("");
+        lineBreak();
+        pressAnyKeyToContinue();
+    }
+    public void eighteenthPoint(){
+        clearConsole();
+        System.out.println("                EJERCICIO #18");
+        System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
+        lineBreak();
+        System.out.println("");
+        lineBreak();
+        pressAnyKeyToContinue();
+    }
+
+
+
     public void finalQuestion() {
         pressAnyKeyToContinue();
         System.out.printf("¿Desea volver a probar este programa? %n 1.Menu inicial %n 2.Salir %n");

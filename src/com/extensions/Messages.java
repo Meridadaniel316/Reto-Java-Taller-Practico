@@ -78,10 +78,25 @@ public class Messages extends ExtensionsMessage {
     public void extractNumber(){
         System.out.println("Escribe un numero superior a 0");
     }
-
+    
     public void printMessageNumber(int number) {
         lineBreak();
         System.out.println("Numero escrito: "+ number);
         lineBreak();
+    }
+    
+    //OCTAVO PUNTO
+
+    public void dayOfWork(String day){
+        System.out.println("El "+day.toLowerCase()+" es un día laboral.");
+    }
+    public void dayOfRest(String day){
+        System.out.println("El "+day.toLowerCase()+" no es dia laboral");
+    }
+    public void extractDataWorkDay(){
+        System.out.println("Por favor escribe el dia de la semana para validar si es laboral o no.");
+    }
+    public void invalidDay(){
+        System.out.println("Seleccionaste un dia invalido");
     }
 }
