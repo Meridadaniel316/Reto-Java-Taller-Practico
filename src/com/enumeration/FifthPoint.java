@@ -16,13 +16,16 @@ public class FifthPoint {
     private final WorkshopQuestions presentation = new WorkshopQuestions();
 
     public void start() {
-        presentation.fifthPoint();
-        menuSeleccion();
-        menuSeleccion();
-        //presentation.finalQuestion();
+        try {
+            presentation.fifthPoint();
+            selectionMenu();
+        } catch (Exception e) {
+            text.errorMessage(e);
+        }
+        presentation.finalQuestion();
     }
 
-    private void menuSeleccion() {
+    private void selectionMenu() {
         text.evenAndOddMenuQuestion();
         String optionSelection = entrada.nextLine();
 
@@ -39,7 +42,7 @@ public class FifthPoint {
             default:
                 msg.errorSystemCmd();
                 error.cmdErrorExecution();
-                menuSeleccion();
+                selectionMenu();
                 break;
         }
     }
@@ -50,7 +53,7 @@ public class FifthPoint {
         while (i <= 100)
         {
             i = getData(i, 3);
-            System.out.println(+i);
+            text.oddNumbers(i);
         }
     }
 
@@ -60,7 +63,7 @@ public class FifthPoint {
         while (i <= 100)
         {
             i = getData(i, 2);
-            System.out.println(+i);
+            text.pairNumbers(i);
         }
     }
 

@@ -34,7 +34,7 @@ public class ThirdPoint {
         area = Math.PI * (radioDouble * radioDouble);
 
         msg.lineBreak();
-        text.AreaResult(area);
+        text.areaResult(area);
         msg.lineBreak();
     }
 

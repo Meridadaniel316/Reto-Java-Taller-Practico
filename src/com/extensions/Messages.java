@@ -45,7 +45,7 @@ public class Messages extends ExtensionsMessage {
     public void extractCircleArea() {
         System.out.print("Introduce el radio de un Círculo: ");
     }
-    public void AreaResult(double area) {
+    public void areaResult(double area) {
         System.out.println("El área del Círculo resultante es: " + area);
     }
 
@@ -58,11 +58,30 @@ public class Messages extends ExtensionsMessage {
         System.out.printf("El producto tiene un valor aproximado de $%.1f este valor ya cuenta con el porcentaje(21) del IVA. %n", total);
     }
 
-    // QUINTO PUNTO
+    // QUINTO Y SEXTO PUNTO
     public void evenAndOddMenuQuestion(){
         System.out.println("¿Quieres ver los números pares o impares?\n1.Pares\n2.Impares\n3.Ambos");
     }
     public void evenAndOdd(int i, int j) {
         System.out.printf("Par: %d - Impar: %d %n", i, j);
+    }
+
+    public void pairNumbers(int i){
+        System.out.println("Números pares: "+i);
+    }
+
+    public void oddNumbers(int i){
+        System.out.println("Números impares: "+i);
+    }
+
+    // SEPTIMO PUNTO
+    public void extractNumber(){
+        System.out.println("Escribe un numero superior a 0");
+    }
+
+    public void printMessageNumber(int number) {
+        lineBreak();
+        System.out.println("Numero escrito: "+ number);
+        lineBreak();
     }
 }

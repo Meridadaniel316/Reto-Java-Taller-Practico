@@ -16,12 +16,16 @@ public class SixthPoint {
     private final WorkshopQuestions presentation = new WorkshopQuestions();
 
     public void start() {
-        presentation.sixthPoint();
-        menuSeleccion();
+        try {
+            presentation.sixthPoint();
+            selectionMenu();
+        } catch (Exception e) {
+            text.errorMessage(e);
+        }
         presentation.finalQuestion();
     }
 
-    private void menuSeleccion() {
+    private void selectionMenu() {
         text.evenAndOddMenuQuestion();
         String optionSelection = entrada.nextLine();
 
@@ -38,7 +42,7 @@ public class SixthPoint {
             default:
                 msg.errorSystemCmd();
                 error.cmdErrorExecution();
-                menuSeleccion();
+                selectionMenu();
                 break;
         }
     }
@@ -46,24 +50,24 @@ public class SixthPoint {
     private void oddNumbers() {
         msg.clearConsole();
         for (int i = 0; i <= 100; i += 3) {
-            System.out.println(+i);
+            text.oddNumbers(i);
         }
     }
 
     private void pairNumbers() {
         msg.clearConsole();
         for (int i = 0; i <= 100; i += 2) {
-            System.out.println(+i);
+            text.pairNumbers(i);
         }
     }
 
     private void bothNumbers() {
         msg.clearConsole();
         for (int i = 0; i <= 100; i += 3) {
-            System.out.println("Números impares: "+i);
+            text.oddNumbers(i);
         }
         for (int i = 0; i <= 100; i += 2) {
-            System.out.println("Números pares: "+i);
+            text.pairNumbers(i);
         }
     }
 }

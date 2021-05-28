@@ -60,7 +60,15 @@ public class WorkshopQuestions extends ExtensionsMessage{
         lineBreak();
         pressAnyKeyToContinue();
     }
-
+    public void seventhPoint(){
+        clearConsole();
+        System.out.println("                EJERCICIO #7");
+        System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
+        lineBreak();
+        System.out.println("Lee un número por teclado y comprueba que este numero es mayor o igual que cero, si no lo es lo volverá a pedir (do while), después muestra ese número por consola.");
+        lineBreak();
+        pressAnyKeyToContinue();
+    }
     public void finalQuestion() {
         pressAnyKeyToContinue();
         System.out.printf("¿Desea volver a probar este programa? %n 1.Menu inicial %n 2.Salir %n");

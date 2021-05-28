@@ -15,9 +15,9 @@ public class FourthPoint {
 
     public void start() {
         int percentage = 21;
-        presentation.fourthPoint();
-        try {
 
+        try {
+            presentation.fourthPoint();
             double quantity = getProductQuantity();
             extractProductResult(percentage, quantity);
 
