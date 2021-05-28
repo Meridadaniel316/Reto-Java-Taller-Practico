@@ -45,6 +45,7 @@ public class Messages extends ExtensionsMessage {
     public void extractCircleArea() {
         System.out.print("Introduce el radio de un Círculo: ");
     }
+
     public void areaResult(double area) {
         System.out.println("El área del Círculo resultante es: " + area);
     }
@@ -59,59 +60,72 @@ public class Messages extends ExtensionsMessage {
     }
 
     // QUINTO Y SEXTO PUNTO
-    public void evenAndOddMenuQuestion(){
+    public void evenAndOddMenuQuestion() {
         System.out.println("¿Quieres ver los números pares o impares?\n1.Pares\n2.Impares\n3.Ambos");
     }
+
     public void evenAndOdd(int i, int j) {
         System.out.printf("Par: %d - Impar: %d %n", i, j);
     }
 
-    public void pairNumbers(int i){
-        System.out.println("Números pares: "+i);
+    public void pairNumbers(int i) {
+        System.out.println("Números pares: " + i);
     }
 
-    public void oddNumbers(int i){
-        System.out.println("Números impares: "+i);
+    public void oddNumbers(int i) {
+        System.out.println("Números impares: " + i);
     }
 
     // SEPTIMO PUNTO
-    public void extractNumber(){
+    public void extractNumber() {
         System.out.println("Escribe un numero superior a 0");
     }
-    
+
     public void printMessageNumber(int number) {
         lineBreak();
-        System.out.println("Numero escrito: "+ number);
+        System.out.println("Numero escrito: " + number);
         lineBreak();
     }
-    
+
     //OCTAVO PUNTO
 
-    public void dayOfWork(String day){
-        System.out.println("El "+day.toLowerCase()+" es un día laboral.");
+    public void dayOfWork(String day) {
+        System.out.println("El " + day.toLowerCase() + " es un día laboral.");
     }
-    public void dayOfRest(String day){
-        System.out.println("El "+day.toLowerCase()+" no es dia laboral");
+
+    public void dayOfRest(String day) {
+        System.out.println("El " + day.toLowerCase() + " no es dia laboral");
     }
-    public void extractDataWorkDay(){
+
+    public void extractDataWorkDay() {
         System.out.println("Por favor escribe el dia de la semana para validar si es laboral o no.");
     }
-    public void invalidDay(){
+
+    public void invalidDay() {
         System.out.println("Seleccionaste un dia invalido");
     }
 
     //NOVENO PUNTO
 
-    public String printTextSmile(){
+    public String printTextSmile() {
         return "La sonrisa sera la mejor arma contra la tristeza";
     }
 
-    public void printSmileQuestion(){
+    public void printSmileQuestion() {
         System.out.println("Si desea concatenar una frase escríbala, de lo contrario apriete <<ENTER>>");
     }
 
     //DECIMO PUNTO
-    public void printTextSpaces(){
+    public void printTextSpaces() {
         System.out.println("Por favor ingrese la frase a la cual le desea eliminar los espacios.");
+    }
+
+    //PUNTO ONCE
+    public void printTextVowelPhrase() {
+        System.out.println("Por favor ingrese una frase a la cual le quiere contar las letras y vocales.");
+    }
+
+    public void readQualityLetters(int quantity, int accountantA, int accountantE, int accountantI, int accountantO, int accountantU) {
+            System.out.println("La frase tiene: "+ quantity +" Letras entre esas letras hay: \n"+accountantA+" letras A\n"+accountantE+" letras E\n"+accountantI+" letras I\n"+accountantO+" letras O\n"+accountantU+" letras U\n");
     }
 }

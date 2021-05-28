@@ -43,6 +43,9 @@ public class Menu {
             case "10":
                 tenthPoint();
                 break;
+            case "11":
+                eleventhPoint();
+                break;
             default: {
                 this.Repeat = true;
                 programStart();
@@ -103,10 +106,10 @@ public class Menu {
         TenthPoint workshop = new TenthPoint();
         workshop.start();
     }
-    /*private void eleventhPoint(){
+    private void eleventhPoint(){
         EleventhPoint workshop = new EleventhPoint();
         workshop.start();
-    }*/
+    }
     /*private void twelfthPoint(){
         TwelfthPoint workshop = new TwelfthPoint();
         workshop.start();
