@@ -101,7 +101,7 @@ public class WorkshopQuestions extends ExtensionsMessage{
         System.out.println("                EJERCICIO #11");
         System.out.println("      ELABORADO POR DANIEL CASTAÑO MERIDA");
         lineBreak();
-        System.out.println("Realizar la construcción de un algoritmo que permita de acuerdo a una frase pasada por consola, indicar cual es la longitud de esta frase, adicionalmente cuantas vocales tiene de “a,e,i,o,u”.");
+        System.out.println("Realizar la construcción de un algoritmo que permita de acuerdo a una frase pasada por consola,\n indicar cual es la longitud de esta frase, adicionalmente cuantas vocales tiene de “a,e,i,o,u”.");
         lineBreak();
         pressAnyKeyToContinue();
     }
@@ -145,10 +145,10 @@ public class WorkshopQuestions extends ExtensionsMessage{
                 "4-MODIFICAR ACTOR\n" +
                 "5-VER TODOS LOS ACTORES\n" +
                 "6- VER PELICULAS DE LOS ACTORES\n" +
-                "\n" +
                 "7-VER CATEGORIA DE LAS PELICULAS DE LOS ACTORES\n" +
                 "8-SALIR\n" +
-                "EL SISTEMA SOLO VA A SALIR CUANDO SE DIGITE EL NUMERO 8, MIENTRAS SE DIGITE UNA DE LAS CINCO OPCIONES DEBE SEGUIR MOSTRADO EL MENU Y SI EL USUARIO DIGITA UN NUMERO QUE NO ESTA EN EL MENU SE DEBE ARROJAR UN MENSAJE \" OPCION INCORRECTO\". Y MOSTRAR EL MENU NUEVAMENTE.\n" +
+                "EL SISTEMA SOLO VA A SALIR CUANDO SE DIGITE EL NUMERO 8, MIENTRAS SE DIGITE UNA DE LAS CINCO OPCIONES DEBE SEGUIR MOSTRADO EL MENU Y SI EL USUARIO DIGITA UN NUMERO QUE NO ESTA EN EL MENU SE DEBE ARROJAR UN MENSAJE  OPCIÓN INCORRECTO.\n" +
+                "Y MOSTRAR EL MENU NUEVAMENTE.\n" +
                 "PISTA: CONVINAR SWICHT Y ALGUNO DE LOS BUCLES.\n");
         lineBreak();
         pressAnyKeyToContinue();

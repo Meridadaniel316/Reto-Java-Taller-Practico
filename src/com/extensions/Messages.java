@@ -128,4 +128,19 @@ public class Messages extends ExtensionsMessage {
     public void readQualityLetters(int quantity, int accountantA, int accountantE, int accountantI, int accountantO, int accountantU) {
             System.out.println("La frase tiene: "+ quantity +" Letras entre esas letras hay: \n"+accountantA+" letras A\n"+accountantE+" letras E\n"+accountantI+" letras I\n"+accountantO+" letras O\n"+accountantU+" letras U\n");
     }
+
+    //PUNTO QUINCE
+
+    public void menuOptions(){
+        System.out.print("****** GESTION CINEMATOGRÁFICA ********\n" +
+                "1-NUEVO ACTOR\n" +
+                "2-BUSCAR ACTOR\n" +
+                "3-ELIMINAR ACTOR\n" +
+                "4-MODIFICAR ACTOR\n" +
+                "5-VER TODOS LOS ACTORES\n" +
+                "6- VER PELICULAS DE LOS ACTORES\n" +
+                "7-VER CATEGORIA DE LAS PELICULAS DE LOS ACTORES\n" +
+                "8-SALIR\n");
+        lineBreak ();
+    }
 }
