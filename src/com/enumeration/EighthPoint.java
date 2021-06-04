@@ -75,7 +75,6 @@ public class EighthPoint {
         }
         return day;
     }
-
     private void dayOfRestAndWork(boolean option) {
         workday = option;
     }

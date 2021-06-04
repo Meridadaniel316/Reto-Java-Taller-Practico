@@ -6,6 +6,53 @@ public class ExtensionsMessage {
 
     Scanner entrada = new Scanner(System.in);
 
+    public int obtainInt(String message) {
+        boolean loop = true;
+        int valor=0;
+        String teclado;
+
+        do {
+            try {
+                System.out.println(message);
+                teclado = entrada.nextLine();
+                valor = Integer.parseInt(teclado);
+                loop = false;
+            } catch (Exception e) {
+                errorSystemCmd ();
+                lineBreak ();
+                System.out.println("El valor introducido debe ser entero para continuar.");
+                lineBreak ();
+            }
+        } while (loop);
+        return valor;
+    }
+
+    public float obtainFloat(String message) {
+        boolean loop = true;
+        float valor=0;
+        String teclado;
+
+        do {
+            try {
+                System.out.println(message);
+                teclado = entrada.nextLine();
+                valor = Float.parseFloat(teclado);
+                loop = false;
+            } catch (Exception e) {
+                errorSystemCmd ();
+                lineBreak ();
+                System.out.println("El valor introducido debe ser un decimal para continuar.");
+                lineBreak ();
+            }
+        } while (loop);
+        return valor;
+    }
+
+    public String obtainString(String message) {
+        System.out.println(message);
+        return entrada.nextLine();
+    }
+
     public void pressAnyKeyToContinue() {
         System.out.println("<<<Presione ENTER para continuar>>>");
         try {

@@ -1,5 +1,7 @@
 package com.extensions;
 
+import com.enumeration.SixteenthPoint.Persona;
+
 public class Messages extends ExtensionsMessage {
 
     public void errorMessage(Exception e) {
@@ -143,4 +145,48 @@ public class Messages extends ExtensionsMessage {
                 "8-SALIR\n");
         lineBreak ();
     }
+
+    //PUNTO DIECISÉIS
+    public String[] textsSixteenthPoint = {
+            "Por favor inserta los siguientes datos:",
+            "Persona N°1, creada correctamente.",
+            "Persona N°2, creada correctamente.",
+            "Persona N°3, creada correctamente.",
+            "mayor de edad",
+            "menor de edad",
+    };
+
+    public void extractPersonsData(Persona p) {
+        System.out.println (p.toString ());
+        System.out.println (
+                p.nombre +
+                        " es "
+                        + (p.esMayorDeEdad () ? textsSixteenthPoint[4] : textsSixteenthPoint[5]) +
+                        " con un peso "+
+                        p.calcularIMC ());
+        lineBreak ();
+
+    }
+
+    public String getPersonalName() {
+        return obtainString("¿Cual es el nombre de la persona?");
+    }
+
+    public float getHeightPerson(String nombre) {
+        return obtainFloat("¿Cual es la altura de " + nombre +"?");
+    }
+
+    public int getWeightPerson(String nombre) {
+        return obtainInt ("¿Cual es el peso de " + nombre +"?");
+    }
+
+    public String getPersonGender(String nombre) {
+        return  obtainString ("¿Cual es el genero de "+nombre+"? H/M");
+    }
+
+    public int getOldPerson(String nombre) {
+        return obtainInt("¿Cual es la edad de " + nombre+"?");
+    }
+
+
 }

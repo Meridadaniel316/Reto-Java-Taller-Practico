@@ -50,7 +50,7 @@ public class FifteenthPoint {
                 startMenu ();
                 break;
             }
-        } 
+        }
     }
 
     private String presentationOfMenu(boolean Repeat) {

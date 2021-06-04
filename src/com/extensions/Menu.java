@@ -1,6 +1,7 @@
 package com.extensions;
 
 import com.enumeration.*;
+import com.enumeration.SixteenthPoint.*;
 
 public class Menu {
 
@@ -57,6 +58,9 @@ public class Menu {
                 break;
             case "15":
                 fifteenthPoint();
+                break;
+            case "16":
+                sixteenthPoint ();
                 break;
             default: {
                 this.Repeat = true;
@@ -138,10 +142,10 @@ public class Menu {
         FifteenthPoint workshop = new FifteenthPoint();
         workshop.start();
     }
-    /*private void sixteenthPoint(){
+    private void sixteenthPoint(){
         SixteenthPoint workshop = new SixteenthPoint();
         workshop.start();
-    }*/
+    }
     /*private void seventeenthPoint(){
         SeventeenthPoint workshop = new SeventeenthPoint();
         workshop.start();
